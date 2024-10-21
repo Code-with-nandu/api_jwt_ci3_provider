@@ -6,7 +6,8 @@ use Restserver\Libraries\REST_Controller;
 
 
 class Api extends REST_Controller {
-
+    public $benchmark; // Declare the property
+    public $hooks;     // Declare the property
 	public function __construct() {
 		parent::__construct();
          $this->load->library('Authorization_Token');
